@@ -41,7 +41,7 @@ while run_again == 'y'.upper():
             commission_items = item_sold - 9
             calculate_commission = commission_items * TIER_B_MIN_COMM 
             total_salary = base_salary + calculate_commission
-            print(f'{employee_name}, Tier:{tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
+            print(f'{employee_name}, Tier: {tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
 
         elif item_sold > TIER_B_MAX:
             commission_items_50 = 6
@@ -49,7 +49,7 @@ while run_again == 'y'.upper():
             commission_items_75 = item_sold - 15
             calculate_commission_75 = commission_items_75 * TIER_B_MAX_COMM 
             total_salary = base_salary + calculate_commission_50 + calculate_commission_75 
-            print(f'{employee_name}, Tier:{tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
+            print(f'{employee_name}, Tier: {tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
 
         else:
             
@@ -60,7 +60,7 @@ while run_again == 'y'.upper():
             commission_items = item_sold - 14
             calculate_commission = commission_items * TIER_M_MIN_COMM
             total_salary = base_salary + calculate_commission
-            print(f'{employee_name}, Tier:{tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
+            print(f'{employee_name}, Tier: {tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
 
         elif item_sold > TIER_M_MAX:
             commission_items_60 = 6
@@ -68,7 +68,7 @@ while run_again == 'y'.upper():
             calculate_itmes_100 = item_sold - 20
             calculate_commission_100 = calculate_itmes_100 * TIER_M_MAX_COMM
             total_salary = calculate_commission_60 + calculate_commission_100 + base_salary 
-            print(f'{employee_name}, Tier:{tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
+            print(f'{employee_name}, Tier: {tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
 
         else:
             
@@ -80,7 +80,7 @@ while run_again == 'y'.upper():
             commission_items = 6
             calculate_commission = commission_items * TIER_P_MIN_COMM
             total_salary = calculate_commission + base_salary
-            print(f'{employee_name}, Tier:{tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
+            print(f'{employee_name}, Tier: {tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
 
         elif item_sold > TIER_P_MAX:
             commission_items_75 = 6
@@ -90,9 +90,12 @@ while run_again == 'y'.upper():
             total_salary = base_salary + calculate_commission_75 + calculate_commission_125
             print(f'{employee_name}, Tier:{tier}, Sold {item_sold}, Monthly Payment: {total_salary}')
 
-        else:
-            
+        elif item_sold < 20:
+            print(f'{employee_name}, Tier: {tier}, Sold {item_sold}, Monthly Payment: {base_salary}')
             print('WARNING: Sales must improve to stay in Tier P.')
+
+        else:
+            print('error')
 
     run_again = input('Do you want to enter another employee? y/n: ')[0].upper()
 
