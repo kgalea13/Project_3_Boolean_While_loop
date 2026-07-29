@@ -4,7 +4,7 @@ A project that focuses on boolean logic with while loops.
 
 Project Objectives
 • Decision-making with if, if-else, if-elif-
-..
+
 • Data validation (and correction and use of default) for user input using a while loop.
 • Nicely formatted output report using f-string.
 • Multiple input data sets (i.e., for multiple Employees).
@@ -32,6 +32,7 @@ add $75 per item for items 20 through 25, and $125 per item
 for all items above 25. If N < 20, there will be a message that
 “WARNING: Sales must improve to stay in Tier P”.
 Write a program that will:
+
 • Ask the user to enter the employee’s name.
 • Ask the user to input a Tier. It should accept B, M, P, b, m, or p. In other words,
 the user may use either upper or lower case designations for the tier. Read the
@@ -90,29 +91,5 @@ the number of cases that need to be checked to just ‘Y’ (so that’d include
 yea, yo, yellow, . . .)
 • Any other response (like No/no/N/n/nope/naw/whatever/who cares/red/green/…) will be
 assumed to be a NO.
-Sample Output (use EXACT format – and NO HARDCODING of the data itself)
-Enter Employee’s Name: Mortimer Snerd
-Enter Monthly Base: 234.54
-Enter Tier (B, M, or P): B
-Enter Items Sold: -12
-Invalid number for Items Sold.
-Enter Items Sold: 12
-Mortimer Snerd, Tier: B, Sold 12 items, Monthly Payment: 384.54
-3
-Do you want to enter another employee? yES
-Enter Employee’s Name: Effy Klinker
-Enter Monthly Base: 583.78
-Enter Tier (B, M, or P): P
-Enter Items Sold: 13
-Effy Klinker, Tier: P, Sold 13 items, Monthly Payment: 583.78
-WARNING: Sales must improve to stay in Tier P
-Do you want to enter another employee? Y
-Enter Employee’s Name: John Doe
-Enter Monthly Base: 300.76
-Enter Tier (B, M, or P): K
-Tier K is not a legitimate tier value.
-Enter Tier (B, M, or P): M
-Enter Items Sold: 23
-John Doe, Tier: M, Sold 23 items, Monthly Payment: 960.76
-Do you want to enter another employee? No
-4
+
+
